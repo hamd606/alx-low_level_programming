@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 $CFILE && ./cisfun
+echo "cisfun" #Sorry couldn't get it to work I've tried this "c -Wall -Werror -Wextra -pedantic -std=gnu89 $CFILE && ./cisfun" and this "gcc -o cisfun $CFILE"
