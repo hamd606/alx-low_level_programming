@@ -7,22 +7,24 @@
 */
 int main(void)
 {
-	int n;
-	int n2;
+	int i, n;
 	int hitit;
 
 	hitit = 0;
 
-	for (n = '0' ; n <= '9' ; n++)
+	for (n = 1 ; n < 99 ; n++)
 	{
-		for (n2 = '0' ; n2 <= '9' ; n2++)
+		for (i = n ; ;)
 		{
-			if (n2 != n)
+			if  (i / 10 % 10 > i % 10)
+				break;
+			i = i / 10;
+			if (i == 0)
 			{
-				putchar(n);
-				putchar(n2);
+				putchar(n / 10 + '0');
+				putchar(n % 10 + '0');
 
-				if (n2 == '8' && n == '9')
+				if (n / 10 + '0' == '8' && n % 10 + '0' == '9')
 				{
 					hitit  = 1;
 				}
@@ -32,6 +34,8 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
+
+				break;
 			}
 		}
 	}
