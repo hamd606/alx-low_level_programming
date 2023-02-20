@@ -7,44 +7,28 @@
 */
 int main(void)
 {
-	int i, n;
+	int i, j;
 	int hitit;
 
 	hitit = 0;
 
-	for (n = 1 ; n < 99 ; n++)
+	for (i = 0; i <= 8; i++)
 	{
-		for (i = n ; ;)
+		for (j = i + 1; j <= 9; j++)
 		{
-			if  (i / 10 % 10 > i % 10)
-				break;
-			i = i / 10;
-			if (i == 0)
+			putchar('0' + i);
+			putchar('0' + j);
+
+			if (hitit < 44)
 			{
-				if (n / 10 + '0' != n % 10 + '0')
-				{
-					putchar(n / 10 + '0');
-					putchar(n % 10 + '0');
+			putchar(',');
+			putchar(' ');
 
-					if (n / 10 + '0' == '8' && n % 10 + '0' == '9')
-					{
-						hitit  = 1;
-					}
-
-					if (hitit == 0)
-					{
-						putchar(',');
-						putchar(' ');
-					}
-
-					break;
-				}
 			}
+			hitit++;
 		}
 	}
-
 	putchar('\n');
 
 	return (0);
 }
-
