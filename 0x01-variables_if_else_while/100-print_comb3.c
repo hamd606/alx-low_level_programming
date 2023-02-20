@@ -21,21 +21,24 @@ int main(void)
 			i = i / 10;
 			if (i == 0)
 			{
-				putchar(n / 10 + '0');
-				putchar(n % 10 + '0');
-
-				if (n / 10 + '0' == '8' && n % 10 + '0' == '9')
+				if (n / 10 + '0' != n % 10 + '0')
 				{
-					hitit  = 1;
-				}
+					putchar(n / 10 + '0');
+					putchar(n % 10 + '0');
 
-				if (hitit == 0)
-				{
-					putchar(',');
-					putchar(' ');
-				}
+					if (n / 10 + '0' == '8' && n % 10 + '0' == '9')
+					{
+						hitit  = 1;
+					}
 
-				break;
+					if (hitit == 0)
+					{
+						putchar(',');
+						putchar(' ');
+					}
+
+					break;
+				}
 			}
 		}
 	}
