@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * print_alphabet - prints lowercase alphabets followed by endl
  *
