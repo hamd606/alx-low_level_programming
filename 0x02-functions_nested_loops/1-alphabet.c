@@ -1,3 +1,5 @@
+void _puchar(char c);
+
 /**
  * print_alphabet - prints lowercase alphabets followed by endl
  *
