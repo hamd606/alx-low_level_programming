@@ -1,5 +1,3 @@
-
-
 /**
  * print_alphabet - prints lowercase alphabets followed by endl
  *
