@@ -13,4 +13,6 @@ int _isalpha(char c);
 
 int print_sign(signed int n);
 
+int _abs(int n);
+
 #endif
