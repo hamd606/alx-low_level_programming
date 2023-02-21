@@ -3,11 +3,11 @@
 int _putchar(char c);
 
 /**
- * main - code entrypoint
+ * print_alphabet - prints lowercase alphabets followed by endl
  *
- * Return: 0 usually
+ * Return: none
  */
-int main(void)
+void print_alphabet(void)
 {
 	int i;
 
@@ -19,7 +19,7 @@ int main(void)
 
 	_putchar('\n');
 
-	return (0);
+	return;
 
 }
 
