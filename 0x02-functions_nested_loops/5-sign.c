@@ -7,7 +7,7 @@
  * Return: On false 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-int print_sign(signed int n)
+int print_sign(int n)
 {
 	if (n > 0)
 	{
@@ -21,10 +21,12 @@ int print_sign(signed int n)
 		return (0);
 	}
 
-	else
+	else if (n < 0)
 	{
 		_putchar('-');
-		_putchar('1');
 		return (-1);
 	}
+
+	else 
+		return (0);
 }
