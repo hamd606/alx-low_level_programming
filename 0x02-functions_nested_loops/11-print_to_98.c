@@ -2,11 +2,9 @@
 #include <stdio.h>
 
 /**
- * add - adds two numbers
- * @n0: first term
- * @n1: second term
+ * print_to_98 - adds two numbers
+ * @n: first term
  *
- * Return: the result.
  * On error, -1 is returned, and errno is set appropriately.
  */
 void print_to_98(int n)
@@ -17,16 +15,16 @@ void print_to_98(int n)
 	{
 		printf("98");
 	}
-	
+
 	else if (n < 98)
 	{
-		for(i = n; i < 98; i++)
+		for (i = n; i < 98; i++)
 		{
 			printf("%d, ", i);
 		}
-		
+
 		printf("98");
-		
+
 	}
 	else if (n > 98)
 	{
@@ -38,7 +36,7 @@ void print_to_98(int n)
 		printf("98");
 
 	}
-	
+
 	printf("\n");
 
 }
