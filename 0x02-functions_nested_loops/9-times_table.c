@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * times table - writes the character c to stdout
+ * times_table - writes the character c to stdout
  *
  * On error, -1 is returned, and errno is set appropriately.
  */
