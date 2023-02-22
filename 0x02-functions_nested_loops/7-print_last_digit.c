@@ -19,7 +19,16 @@ int print_last_digit(int n)
 
 	else
 	{
-		_putchar('0' + (-1 * n % 10));
-		return (0 + (-1 * n % 10));
+		if (n == -2147483648)
+		{
+			_putchar('8');
+			return (8);
+		}
+
+		else
+		{
+			_putchar('0' + (-1 * n % 10));
+			return (0 + (-1 * n % 10));
+		}
 	}
 }
