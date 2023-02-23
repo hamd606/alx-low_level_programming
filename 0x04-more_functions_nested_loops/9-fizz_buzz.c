@@ -3,7 +3,7 @@
 
 /**
  * main - prints fizz and buzz for fun
- *
+ * Return: 0
  */
 
 int main(void)
