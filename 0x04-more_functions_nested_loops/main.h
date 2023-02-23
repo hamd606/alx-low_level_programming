@@ -1,6 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+void print_number(int);
+
 int _isupper(int c);
 
 int _isdigit(int c);
