@@ -2,9 +2,8 @@
 #include <stdio.h>
 
 /**
- * main - Fizz Buzz code
+ * main - prints fizz and buzz for fun
  *
- * Return: void
  */
 
 int main(void)

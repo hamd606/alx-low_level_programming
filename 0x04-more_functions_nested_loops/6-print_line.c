@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
- * print_line - prints line
- * @n: variable
+ * print_line - prints sequence of '_' forming a line
+ * @n: lenght of the linee
  *
- * Return: 0
  */
 
 void print_line(int n)

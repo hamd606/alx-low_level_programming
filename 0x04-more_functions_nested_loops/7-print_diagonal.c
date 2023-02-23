@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * print_diagonal - diagonal lines made of backslashes
- * @n: number of \ to be printed
- * Return: void
+ * print_diagonal - diagonal sideway line from '\\'
+ * @n: length
  */
 
 void print_diagonal(int n)
