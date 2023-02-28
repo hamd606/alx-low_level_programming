@@ -1,6 +1,6 @@
- include "main.h"
- /**
- * reset_to_98 - change value of the pointed to int to 98
+#include "main.h"
+/**
+ * reset_to_98 - change value of the pointed to int to 9.8
  * @n: printed integer
  * Return: void
  */

@@ -4,7 +4,7 @@
 
 /**
  * print_array - print n-th elements of an int array
- * @*a: pointer to int[n]
+ * @a: pointer to int[n]
  * @n: size of *a ref
  * Return: none
  */
