@@ -5,11 +5,15 @@
  * @str: The string to be encoded.
  * Return: A pointer to the encoded string.
  */
+
+
 char *leet(char *str)
 {
 	int i, j;
 
-	i = 0:
+	i= 0;
+	j = 0;
+
 	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
 
 	while (str[i])
