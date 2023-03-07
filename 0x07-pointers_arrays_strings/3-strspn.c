@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- *  _strspn - returns the number of bytes in the initial segment of s which consist only of bytes from accept
+ *  _strspn -  n of bytes in the init part of from only of bytes from accept
  *  @s: input
- *  @accept: bytes that are matched 
+ *  @accept: bytes that are matched
  *  Return: size of bytes
  */
 

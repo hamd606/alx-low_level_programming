@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strpbrk - function locates the first occurrence in the string s of any of the bytes in the string accept
+ * _strpbrk - finds first n  in the str s of any of the bytes in the str accept
  * @s: input string to be searched
  * @accept: target bytes
  * Return: if found a pointer to result and null otherwise
