@@ -6,7 +6,7 @@
  * @n: input
  * Return: 1 if true 0 otherwise
  */
-int is_prime_number(int n);
+int is_prime_number(int n)
 {
 	int i;
 
