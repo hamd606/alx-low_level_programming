@@ -8,14 +8,16 @@
  */
 int is_prime_number(int n)
 {
+	int p;
+
 	if (n <= 1)
-		return 0;
+		return (0);
 	if (n % 2 == 0)
-		return n == 2;
-	for (int p = 3; p * p <= n; p += 2)
+		return (n == 2);
+	for (p = 3; p * p <= n; p += 2)
 	{
 		if (is_prime_number(p) && n % p == 0)
-			return 0;
+			return (0);
 	}
-	return 1;
+	return (1);
 }
