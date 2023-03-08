@@ -2,8 +2,8 @@
 
 /**
  * _pow_recursion - x**y
- * @n: input ints
- *
+ * @x: input ints
+ * @y: input pow
  * Return: x**x
  */
 int _pow_recursion(int x, int y)
