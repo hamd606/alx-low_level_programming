@@ -18,32 +18,27 @@ int main(int argc, char *argv[])
 	int j;
 
 	result = 0;
-	
+
 	if (argc < 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
 
-
-	else
-	{
 		/*checking for non digit chars*/
 		for (i = 1; i < argc; i++)
 		{
 			j = 0;
-			while(argv[i][j])
+			while (argv[i][j])
 			{
-				if (isdigit(argv[i][j] == 0))
+				if (isdigit(argv[i][j]) == 0)
 				{
-					printf("Eroor\n");
+					printf("Error\n");
 					return (1);
 				}
 
 				j++;
-			
 			}
-
 			/* if prigram reaches here it means no non diigts were detected*/
 
 		}
@@ -54,7 +49,6 @@ int main(int argc, char *argv[])
 		}
 
 		printf("%d\n", result);
-		
+
 		return (0);
-	}
 }
