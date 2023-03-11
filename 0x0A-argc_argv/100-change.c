@@ -28,8 +28,13 @@ int main(int argc, char *argv[])
 	int c1;
 
 	int rest;
-	
-	c25 = argc -argc;
+
+	if (argc != 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
+
 
 	c25 = 0;
 	c10 = 0;
