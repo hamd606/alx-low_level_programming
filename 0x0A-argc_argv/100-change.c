@@ -4,57 +4,19 @@
 #include <ctype.h>
 
 /**
- * main - prints argc passed from cmd
- * @argc: argc main
- * @argv: args passed to the prog
- * Return: 0
- */
-
-int main(int argc, char *argv[])
+  * cooins - return min number of change with coins 25 10 5 2 1
+  * @input: intput
+  * Return: number of coins
+  */
+int cooins(int input)
 {
 
-	int input;
+	int coins, c25, c10, c5, c2, c1, rest;
 
-	int coins;
-
-	int c25;
-	
-	int c10;
-	
-	int c5;
-	
-	int c2;
-	
-	int c1;
-
-	int rest;
-
-	if (argc != 2)
-	{
-		printf("Error\n");
-		return (1);
-	}
-
-
-	c25 = 0;
-	c10 = 0;
-	c5 = 0;
-	c2 = 0;
-	c1 = 0;
-
-	coins = 0;
-	rest = 0;
-
-	input = atoi(argv[1]);
+	c25 = c10 = c5 = c2 = c1 = coins = rest = 0;
 
 	c25 = input / 25;
 	rest = input % 25;
-
-	if (input < 1)
-	{
-		printf("0\n");
-		return (1);
-	}
 
 	if (rest != 0)
 	{
@@ -80,7 +42,36 @@ int main(int argc, char *argv[])
 	}
 
 	coins = c25 + c10 + c5 + c2 + c1;
-	printf("%d\n", coins);
-	
+	return (coins);
+
+}
+
+/**
+ * main - prints argc passed from cmd
+ * @argc: argc main
+ * @argv: args passed to the prog
+ * Return: 0
+ */
+
+int main(int argc, char *argv[])
+{
+	int input;
+
+	if (argc != 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
+
+	input = atoi(argv[1]);
+
+	if (input < 1)
+	{
+		printf("0\n");
+		return (1);
+	}
+
+	printf("%d\n", cooins(input));
+
 	return (0);
 }
