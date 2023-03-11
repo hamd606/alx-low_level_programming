@@ -21,8 +21,8 @@ int main(int argc, char *argv[])
 
 	if (argc < 3)
 	{
-		printf("Error\n");
-		return (1);
+		printf("0\n");
+		return (0);
 	}
 
 		/*checking for non digit chars*/
