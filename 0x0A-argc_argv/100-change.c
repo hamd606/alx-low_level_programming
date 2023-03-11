@@ -12,6 +12,7 @@
 
 int main(int argc, char *argv[])
 {
+
 	int input;
 
 	int coins;
@@ -27,6 +28,8 @@ int main(int argc, char *argv[])
 	int c1;
 
 	int rest;
+	
+	c25 = argc -argc;
 
 	c25 = 0;
 	c10 = 0;
