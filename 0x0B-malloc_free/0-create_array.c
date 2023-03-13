@@ -7,13 +7,13 @@
   * create_array - create a dinamic array of size size
   * @size: size of the array
   * @c: the char to initialize the block with
-  * Return: pointer to the reserved memory bloc 
+  * Return: pointer to the reserved memory bloc
   */
 char *create_array(unsigned int size, char c)
 {
 
 	unsigned int i;
-	
+
 	char *p;
 
 	if (size == 0)
