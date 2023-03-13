@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
-  * _strdup - function that returns a pointer to a newly allocated space in memory copy of str
+  * _strdup - the same as strdup, well almost it's a crappier version
   * @str: string to be copied
   * Return: pointer to created memory space
   */
@@ -18,7 +18,7 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 
-	while(str[len])
+	while (str[len])
 		len++;
 
 	if (len == 0)
