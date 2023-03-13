@@ -22,9 +22,15 @@ char *_strdup(char *str)
 		len++;
 
 	if (len == 0)
-		return (NULL);
+	{
+		p = malloc(1);
+		p[1] = '\0';
+	}
 
-	p = malloc(len);
+	else
+	{
+		p = malloc(len);
+	}
 
 	if (p == NULL)
 		return (NULL);
