@@ -1,4 +1,4 @@
-#include <stdlib.h>
+i#include <stdlib.h>
 #include <stdio.h>
 #include "main.h"
 
@@ -41,7 +41,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		p = malloc(len2 + 1);
 		if (p == NULL)
-			return (Null);
+			return (NULL);
 
 		for (i = 0; i < len2; i++)
 			p[i] = s2[i];
