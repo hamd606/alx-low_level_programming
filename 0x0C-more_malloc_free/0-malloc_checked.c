@@ -22,7 +22,6 @@ void *malloc_checked(unsigned int b)
 	{
 		if (p == NULL)
 		{
-			printf("Fu no");
 			exit(98);
 		}
 	}
