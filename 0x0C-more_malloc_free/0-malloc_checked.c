@@ -1,5 +1,7 @@
 #include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
+#include <limits.h>
 
 /**
  * malloc_checked - reserves memory with  malloc(input)
@@ -9,10 +11,21 @@
 
 void *malloc_checked(unsigned int b)
 {
-	void *p = malloc(b);
+	int *p;
 
-	if (p == NULL)
-		exit(98);
+	p = NULL;
+	
+	if (b < INT_MAX)
+		p = malloc(b);
+
+	else
+	{
+		if (p == NULL)
+		{
+			printf("Fu no");
+			exit(98);
+		}
+	}
 
 	return (p);
 }
