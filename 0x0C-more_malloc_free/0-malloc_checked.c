@@ -14,7 +14,7 @@ void *malloc_checked(unsigned int b)
 	int *p;
 
 	p = NULL;
-	
+
 	if (b < INT_MAX)
 		p = malloc(b);
 
