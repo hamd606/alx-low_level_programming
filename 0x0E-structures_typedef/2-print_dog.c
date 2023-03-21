@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "dog.h"
 #include <stddef.h>
 /**
@@ -14,4 +15,5 @@ void print_dog(struct dog *d)
 	else
 	{
 		printf("Name : %s\nAge : %f\nOwner : %s\n", (*d).name, (*d).age, (*d).owner);
+	}
 }
