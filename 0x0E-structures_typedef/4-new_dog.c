@@ -2,11 +2,11 @@
 #include <stddef.h>
 #include <stdlib.h>
 /**
-  * init_dog - initializes dog struct
-  * @d: struct pointer
+  * new_dog - creates a dog struct
   * @name: name
   * @age : age
   * @owner: owner
+  * Return: pointer to the created struct
   */
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -23,6 +23,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 	mydog->name = name;
 	mydog->age = age;
 	mydog->owner = owner;
-	
+
 	return (mydog);
 }
