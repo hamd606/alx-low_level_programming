@@ -1,4 +1,4 @@
-
+#include <stddef.h>
 /**
  * int_index - searches for an int in an arr of ints.
  * @array: arr of ints
