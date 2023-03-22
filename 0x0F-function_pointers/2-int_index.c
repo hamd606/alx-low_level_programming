@@ -4,7 +4,8 @@
  * @array: arr of ints
  * @size: size of array
  * @cmp: pointer to func that compares
- * Return: if something is wrong : -1 otherwise index of first elem with cmp(index)!= 0
+ * Return: if something is wrong : -1
+ *	otherwise index of first elem with cmp(index)!= 0
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
