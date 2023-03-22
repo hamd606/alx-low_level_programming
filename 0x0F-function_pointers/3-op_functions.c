@@ -1,25 +1,60 @@
-#include "3-calc.h"
-#include <stdlib.h>
+int op_add(int a, int b);
+int op_sub(int a, int b);
+int op_mul(int a, int b);
+int op_div(int a, int b);
+int op_mod(int a, int b);
 
 /**
- * get_op_func - chooses the correct operator
- * @s: operator passer
- * Return: pointer to funct that will perform the correct op
+ * op_add - returns a + b
+ * @a: 1st term
+ * @b: 2sd term
+ * Return: a + b
  */
-int (*get_op_func(char *s))(int, int)
+int op_add(int a, int b)
 {
-	op_t ops[] = {
-		{"+", op_add},
-		{"-", op_sub},
-		{"*", op_mul},
-		{"/", op_div},
-		{"%", op_mod},
-		{NULL, NULL}
-	};
-	int i = 0;
+	return (a + b);
+}
 
-	while (ops[i].op != NULL && *(ops[i].op) != *s)
-		i++;
+/**
+ * op_sub - returns a - b
+ * @a: 1st term
+ * @b: 2sd term
+ * Return: a - b
+ */
+int op_sub(int a, int b)
+{
+	return (a - b);
+}
 
-	return (ops[i].f);
+/**
+ * op_mul - returns a * b
+ * @a: 1st term
+ * @b: 2sd term
+ * Return: a * b
+ */
+int op_mul(int a, int b)
+{
+	return (a * b);
+}
+
+/**
+ * op_div - return a / b
+ * @a: 1st term
+ * @b: 2sd term
+ * Return: a / b
+ */
+int op_div(int a, int b)
+{
+	return (a / b);
+}
+
+/**
+ * op_mod - return a % b
+ * @a: 1st term
+ * @b: 2sd term
+ * Return: a % b
+ */
+int op_mod(int a, int b)
+{
+	return (a % b);
 }
