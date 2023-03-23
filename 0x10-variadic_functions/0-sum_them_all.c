@@ -4,6 +4,7 @@
 /**
   * sum_them_all - sums all of input args but n
   * @n: number of args
+  * @...: parameters to calculate the sum of
   * Return: sum of all args
   */
 int sum_them_all(const unsigned int n, ...)
