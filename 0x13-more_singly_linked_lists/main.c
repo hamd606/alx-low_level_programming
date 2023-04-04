@@ -4,22 +4,29 @@
 #include "lists.h"
 
 /**
-   * main - check the code
-    *
-     * Return: Always 0.
-      */
+ * main - check the code
+ * 
+ * Return: Always 0.
+ */
 int main(void)
 {
-	    list_t *head;
+    listint_t *head;
+    listint_t *new;
+    listint_t hello = {8, NULL};
+    size_t n;
 
-	        head = NULL;
-		    add_node_end(&head, "Bob");
-		        add_node_end(&head, "&");
-			    add_node_end(&head, "Kris");
-			        add_node_end(&head, "love");
-				    add_node_end(&head, "asm");
-				        print_list(head);
-					    free_list(head);
-					        head = NULL;
-						    return (0);
+    head = &hello;
+    new = malloc(sizeof(listint_t));
+    if (new == NULL)
+    {
+        printf("Error\n");
+        return (1);
+    }
+    new->n = 9;
+    new->next = head;
+    head = new;
+    n = print_listint(head);
+    printf("-> %lu elements\n", n);
+    free(new);
+    return (0);
 }
