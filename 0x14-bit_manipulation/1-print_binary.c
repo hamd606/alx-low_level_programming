@@ -2,7 +2,7 @@
 
 /**
  * print_bin - prints an int in base 2 using recursion
- * @n: input int in base 10
+ * @x: input int in base 10
  */
 void print_bin(unsigned long int x)
 {
