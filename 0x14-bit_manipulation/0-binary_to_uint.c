@@ -5,7 +5,7 @@
   * @s: string to be reversed
   * Return: ptr to a reversed string
   */
-char *rev_string(const char * s)
+char *rev_string(const char *s)
 {
 	char *str_reversed;
 	int str_length, i, half;
@@ -61,7 +61,7 @@ int power(int base, int power)
 }
 
 /**
-  * binary_to_uint - converts a bin stored in a string to unsigned int in base 10
+  * binary_to_uint - converts a binary  string to uint in base 10
   * @b: binary string
   * Return: string converted to unsigned int
   */
