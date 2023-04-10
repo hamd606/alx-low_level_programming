@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 	exit(0);
 }
 /**
-  * copy_file - copies a file into another
+  * cp_file - copies a file into another
   * @src: file source
   * @dest: file destination
   * Return: 98
