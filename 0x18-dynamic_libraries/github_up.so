@@ -1,0 +1,15 @@
+--2023-08-21 05:09:06--  https://github.com/hamd606/alx-low_level_programming/tree/master/0x18-dynamic_libraries/printf.so
+Resolving github.com (github.com)... 140.82.114.3
+Connecting to github.com (github.com)|140.82.114.3|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://github.com/hamd606/alx-low_level_programming/blob/master/0x18-dynamic_libraries/printf.so [following]
+--2023-08-21 05:09:06--  https://github.com/hamd606/alx-low_level_programming/blob/master/0x18-dynamic_libraries/printf.so
+Reusing existing connection to github.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 17736 (17K) [text/plain]
+Saving to: ‘printf.so.1’
+
+     0K .......... .......                                    100% 18.1M=0.001s
+
+2023-08-21 05:09:06 (18.1 MB/s) - ‘printf.so.1’ saved [17736/17736]
+
